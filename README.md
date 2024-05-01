@@ -2,6 +2,9 @@
 
 Creates a website which can calculate fibonacci values.
 
+![image](https://github.com/mustardjelly/fib/assets/32181718/12b14078-ed62-4691-8cc2-caa1deba1f22)
+
+
 ## To install
 
 I have included poetry and requirement.txt installation files allowing for a
