@@ -1,3 +1,5 @@
+"""Testing setup for performance metrics"""
+
 import logging
 import random
 import time
@@ -26,6 +28,7 @@ def time_it(func: Callable[[int], int]) -> float:
     for i in range(FIBS_TO_MAKE):
         value: int = random.randint(*RAND_RANGE)
         res: int = func(value)
+        # pylint: disable=logging-fstring-interpolation
         logging.debug(f"{i:2} - f({value:2}) = {res:14}")
     finish: float = time.time()
     elapsed: float = finish - start
